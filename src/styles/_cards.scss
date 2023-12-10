@@ -1,0 +1,75 @@
+.card {
+	width: 19rem;
+	height: 33rem;
+	box-shadow: -10px -10px 20px rgba(245, 245, 245, 0.7),
+		10px 10px 20px rgba(245, 245, 245, 0.7);
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem 1.2rem;
+	gap: 1.2rem;
+	justify-content: space-between;
+
+	& h1 {
+		font-size: 21px;
+		margin-bottom: 0.8rem;
+		color: $cdarkergray;
+	}
+
+	& h2 {
+		font-size: 16px;
+		color: $cdarkgray;
+		margin-bottom: 0.3rem;
+	}
+
+	& p {
+		font-size: 14px;
+		color: $cdarkgray;
+	}
+
+	& .price_container {
+		color: $cdarkergray;
+
+		& .gramm {
+			font-size: 18px;
+		}
+
+		& .price {
+			font-size: 21px;
+			font-weight: 600;
+		}
+
+		& .price_high {
+			font-size: 18px;
+			color: $cdarkgray;
+			text-decoration: line-through;
+		}
+
+		& .price_low {
+			font-size: 21px;
+			color: $cred;
+			font-weight: 600;
+		}
+	}
+
+	& .kaka {
+		margin: 0 auto;
+		border-radius: 20rem;
+		width: 10rem;
+		height: 10rem;
+	}
+
+	& .card_header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		& .rating {
+			display: flex;
+			color: $cdarkgray;
+			gap: 0.4rem;
+			font-size: 18px;
+			align-items: center;
+		}
+	}
+}

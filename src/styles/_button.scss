@@ -1,0 +1,52 @@
+.button {
+	&::before {
+		content: "В корзену";
+	}
+	width: 100%;
+	height: 3.5rem;
+	background-color: $cgreen;
+	border-radius: 2rem;
+	cursor: pointer;
+	box-shadow: 0 0 5px $cgray;
+	transition: 0.1s;
+
+	margin-top: 0.5rem;
+
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-decoration: none;
+	font-size: 18px;
+	&:hover {
+		transform: scale(1.02);
+		box-shadow: 0 0 10px $cgray;
+	}
+
+	&_disabled {
+		&::before {
+			content: "В корзине";
+		}
+		pointer-events: none;
+		cursor: pointer;
+
+		width: 100%;
+		height: 3.5rem;
+		background-color: $cgreen;
+		border-radius: 2rem;
+		box-shadow: 0 0 5px $cgray;
+		transition: 0.1s;
+
+		margin-top: 0.5rem;
+
+		display: flex;
+
+		justify-content: center;
+		align-items: center;
+		color: white;
+		text-decoration: none;
+		font-size: 18px;
+		opacity: 50%;
+	}
+}
